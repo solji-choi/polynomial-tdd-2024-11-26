@@ -13,4 +13,12 @@ public class CalcTest {
 
         assertThat(rs).isEqualTo(8);
     }
+
+    @Test
+    @DisplayName("10 + 15")
+    public void t2() {
+        int rs = Calc.run("10 + 15");
+
+        assertThat(rs).isEqualTo(25);
+    }
 }
