@@ -3,10 +3,11 @@ package com.ll;
 public class Calc {
 
     public static int run(String expr) {
-        if("10 + 15".equals(expr)) {
-            return 25;
-        }
+        String[] exprBits = expr.split(" \\+ ");
 
-        return 8;
+        int num1 = Integer.parseInt(exprBits[0]);
+        int num2 = Integer.parseInt(exprBits[1]);
+
+        return num1 + num2;
     }
 }
